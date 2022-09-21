@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Discount Calculator (HTML)</title>
+</head>
+<body>
+    <h1 style="color: navy;">Product Discount Calculator</h1>
+
+    <form action="display_discount.php" method="post">
+        <div id="data">
+            <label>Product Description: </label>
+            <input type="text" name="desc"><br>
+    
+            <label>List Price: </label>
+            <input type="text" name="price"><br>
+    
+            <label>Discount Percent: </label>
+            <input type="text" name="percent"><br>
+        </div>
+
+        <div id="buttons">
+            <input type="submit" value="Calculate Discount"><br>
+        </div>
+    </form> 
+</body>
+</html>
