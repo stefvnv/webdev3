@@ -1,0 +1,33 @@
+<?php
+
+require_once('connect.php');
+$query='SELECT * FROM car_details';
+$cars = $db->query($query); //$cars contains resultset
+
+
+<html>
+    <head>
+        <title>Car Details</title>
+    </head>
+
+    <body>
+    <h2>Car List</h2>
+        <table>
+            <tr>
+                <th>Identity</th>
+                <th>Make</th>
+                <th>Model</th>
+            </tr>
+
+            <?php foreach  ($cars as $car): ?>
+
+            <tr>
+                <td><?php echo $car['id']; ?></td>
+                <td><?php echo $car['make']; ?></td>
+                <td><?php echo $car['model']; ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    </body>
+</html>
+
