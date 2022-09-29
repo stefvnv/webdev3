@@ -1,7 +1,7 @@
 <?php
 
 //Add code to include the file “connect.php”
-require_once('connect.php');
+require_once('../ex1/connect.php');
 
 //Add code to Select all the records from the car_details table
 global $db;

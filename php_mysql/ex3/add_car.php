@@ -3,7 +3,7 @@
 global $db, $make, $model, $insert_count, $query;
 
 //“add_car.php” should require the connect.php file
-require_once('connect.php');
+require_once('../ex1/connect.php');
 
 //It will read on the Make and Model sent by POST
 $make = $_POST['make'];
